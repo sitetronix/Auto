@@ -1,0 +1,233 @@
+.process-page {
+    background: #f7f6f3;
+    padding: 60px 0;
+    color: #191919;
+}
+
+.process-page .container {
+    width: min(1100px, calc(100% - 30px));
+    margin: auto;
+}
+
+/* КАРТКИ */
+
+..process-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    align-items: start;
+}
+
+.process-card {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e7e4df;
+    border-radius: 14px;
+
+    /* главное */
+    min-height: 0;
+    height: auto;
+    align-self: start;
+}
+
+.process-card-number {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #f1eeeb;
+    color: #9a6548;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.process-card-content span {
+    display: block;
+    margin-bottom: 5px;
+
+    color: #9a6548;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.process-card-content h3 {
+    margin: 0 0 7px;
+
+    font-size: 18px;
+    line-height: 1.15;
+    font-weight: 600;
+}
+
+.process-card-content p {
+    margin: 0;
+
+    color: #747474;
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+
+/* DARK */
+.process-card-dark {
+    background: #151515;
+    border-color: #151515;
+    color: #fff;
+}
+
+.process-card-dark .process-card-number {
+    background: #292929;
+    color: #fff;
+}
+
+.process-card-dark .process-card-content span {
+    color: #b98264;
+}
+
+.process-card-dark .process-card-content p {
+    color: #aaa;
+}
+
+
+/* ACCENT */
+.process-card-accent {
+    background: #9a6548;
+    border-color: #9a6548;
+    color: #fff;
+}
+
+.process-card-accent .process-card-number {
+    background: rgba(255,255,255,.15);
+    color: #fff;
+}
+
+.process-card-accent .process-card-content span {
+    color: rgba(255,255,255,.75);
+}
+
+.process-card-accent .process-card-content p {
+    color: rgba(255,255,255,.8);
+}
+
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    .process-cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .process-card {
+        padding: 16px;
+        min-height: 0;
+    }
+
+    .process-card-number {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 12px;
+    }
+
+    .process-card-content h3 {
+        font-size: 18px;
+    }
+
+    .process-card-content p {
+        font-size: 12px;
+    }
+}
+
+
+/* МОБІЛЬНИЙ */
+
+@media (max-width: 700px) {
+
+    .process-page {
+        padding: 25px 0 40px;
+    }
+
+    .process-cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .process-card {
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .process-card-number {
+        width: 34px;
+        height: 34px;
+        margin-bottom: 16px;
+    }
+
+    .process-card-content h3 {
+        font-size: 20px;
+    }
+
+    .process-card-content p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
+
+.grounds-selected-files {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.grounds-selected-file {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 1px solid #e5e1dc;
+    border-radius: 10px;
+    background: #faf9f7;
+}
+
+.grounds-file-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #9a6548;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.grounds-file-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+.grounds-file-info strong {
+    overflow: hidden;
+    color: #292929;
+    font-size: 12px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.grounds-file-info small {
+    color: #8a8783;
+    font-size: 10px;
+}
